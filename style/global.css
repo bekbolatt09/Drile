@@ -1,26 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Federo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Potta+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 ul {
     list-style: none;
 }
+
 .container {
     width: 1400px;
     margin: 0 auto;
 }
+
 .header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
 }
+
 .header-logo h1 {
     font-family: "Potta One", system-ui;
     font-weight: 400;
@@ -28,46 +34,57 @@ ul {
     font-size: 38px;
     color: #565759;
 }
+
 .header-links {
     display: flex;
     gap: 40px;
 }
+
 .header-links a {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     color: #697390;
 }
+
 .header-market {
     display: flex;
     gap: 40px;
 }
+
 .grav {
     display: none;
 }
+
 .slider {
     margin-top: 90px;
+    position: relative;
 }
-.slider-inner { 
+
+.slider-inner {
     display: flex;
     flex-direction: row;
-    gap: 90px;
+    gap: 100px;
     align-items: center;
 }
+
 .slider-right {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .slider-right-text p {
     font-family: "Federo", sans-serif;
     width: 385px;
     font-size: 50px;
     line-height: 60px;
 }
+
 .btn {
     width: 122px;
     height: 38px;
 }
+
 .gray {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
@@ -75,38 +92,113 @@ ul {
     color: #fff;
     border: 1px solid transparent;
 }
+
+.seller-title h1 {
+    font-family: "Federo", sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.seller-card {
+    width: 255px;
+    height: 342px;
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    position: relative;
+}
+.seller-card-5 {
+    background-color: #9E0B0F;
+    color: #fff;
+    padding: 6px 9px ;
+    text-transform: uppercase;
+}
+.seller-cart-hoters {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 12px;
+    gap: 5px;
+}
+.seller-img  {
+    text-align: center;
+}
+.seller-card-hot {
+    background-color: #F29731;
+    color: #fff;
+    padding: 6px 6px ;
+    text-transform: uppercase;
+}
+.seller-img img {
+    display: inline-block;
+}
+.seller-market {
+    position: absolute;
+    left: 220px;
+}
+.seller-market-update {
+    border: 1px solid #56575967;
+    padding: 5px;
+}
+.seller-market-like {
+    border: 1px solid #56575967;
+    padding: 5px;
+}
+.seller-market-magazine {
+    border: 1px solid #56575967;
+    padding: 5px;
+}
+.prev{
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}
+.next{
+    position: absolute;
+    right: 100px;
+    top: 200px;
+}
 @media screen and (max-width: 1024px) {
     .container {
         width: 950px;
     }
+
     .slider-inner {
         flex-direction: column;
     }
+
     .slider-right-text {
         text-align: center;
     }
+
     .slider-right-btn {
         text-align: center;
     }
 }
+
 @media screen and (max-width: 790px) {
     .container {
         width: 700px;
     }
+
     .header-market {
         display: none;
     }
 }
+
 @media screen and (max-width: 560px) {
     .container {
         width: 500px;
     }
+
     .header-links {
         display: none;
     }
+
     .grav {
         display: block;
     }
+
     .grav p {
         font-size: 47px;
     }
